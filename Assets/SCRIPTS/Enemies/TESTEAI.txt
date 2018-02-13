@@ -1,0 +1,6 @@
+tree("Root")
+	sequence
+		printerA
+		Wait 1.0
+		printerB
+		Wait 1.0

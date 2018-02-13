@@ -1,0 +1,81 @@
+tree ("Root")
+	fallback
+		while is_alive_enemy
+			
+					fallback
+						while not is_damaged
+							fallback
+
+								tree ("Patrol")
+								tree ("Vs Player")
+						sequence
+							tree ("Hurt")
+		sequence
+			Dead()
+// while is_on_chaseRange
+// tree ("Chase")
+
+// sequence
+// SetColor(1.0, 0.0, 0.0)
+// Wait 1.0
+
+// SetColor(0.0, 1.0, 0.0)
+// Wait 1.0
+
+// SetColor(0.0, 0.0, 1.0)
+// Wait 1.0
+tree ("Patrol")
+	while not is_on_chaseRange
+		fallback
+			while not is_alert
+				sequence
+					Patrol()
+					Wait 2.0
+					GenerateDestination()
+					Wait 2.0
+					MoveToDestination()
+					Wait 2.0
+			tree ("Alert")
+
+tree ("Vs Player")
+	fallback
+		while not is_on_attackRange
+			tree ("Chase")
+		sequence
+			tree ("Attack")
+			Wait 2.0
+//tree ("Allert")
+// while not is_on_chaseRange
+// repeat
+// Allert()
+
+tree ("Chase")
+	while is_on_chaseRange
+		Chase()
+
+tree ("Attack")
+	while is_on_attackRange
+		sequence
+			Attack()
+			Wait 0.3
+			tree ("Idle")
+
+tree ("Alert")
+	while not is_on_chaseRange
+		sequence
+			Alert()
+			Wait 0.3
+			GenerateDestination()
+			Wait 0.3
+			MoveToDestination()
+			Wait 0.3
+
+tree ("Hurt")
+		sequence
+			GenerateDestination()
+			Wait 0.3
+			MoveToDestination()
+
+tree ("Idle")
+	sequence
+		Idle()

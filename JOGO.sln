@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JOGO", "Assembly-CSharp.csproj", "{1D305758-5929-6EE1-0ED2-9591AB8411A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JOGO", "Assembly-CSharp-Editor.csproj", "{57EF3A34-6F6A-66E7-8A54-2AC6C243A263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D305758-5929-6EE1-0ED2-9591AB8411A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D305758-5929-6EE1-0ED2-9591AB8411A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D305758-5929-6EE1-0ED2-9591AB8411A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D305758-5929-6EE1-0ED2-9591AB8411A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57EF3A34-6F6A-66E7-8A54-2AC6C243A263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EF3A34-6F6A-66E7-8A54-2AC6C243A263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EF3A34-6F6A-66E7-8A54-2AC6C243A263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EF3A34-6F6A-66E7-8A54-2AC6C243A263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
